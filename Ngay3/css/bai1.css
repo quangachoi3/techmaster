@@ -1,0 +1,19 @@
+.span2 {
+    color: purple
+}
+.span1 {
+    font-size: 20px
+}
+.span3 {
+    color: white;
+    background-color: purple;
+    font-size: 20px
+}
+#section1 {
+    border: 3px solid gray;
+    width: 220px;
+    height: 440px;
+    border-radius: 5px;
+    padding: 10px;
+    
+}
