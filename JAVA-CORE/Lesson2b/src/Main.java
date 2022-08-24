@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        bai7();
+        bai1();
     }
 
     public static void bai1()
@@ -90,18 +90,16 @@ public class Main {
 
     public static void bai6()
     {
-        int count = 0;
         for (int i = 0; i < 6; i++)
         {
-            for (int j = 0; j < count; j++)
+            for (int j = 0; j < i; j++)
             {
                 System.out.print(" ");
             }
-            for (int j = 0; j < 6- count; j++)
+            for (int j = 0; j < 6- i; j++)
             {
                 System.out.print("*");
             }
-            count++;
             System.out.println("");
         }
     }
@@ -121,6 +119,36 @@ public class Main {
             }
             count++;
             System.out.println("");
+        }
+    }
+
+    public static void bai9()
+    {
+        int n = 13;
+        for (int i = 0; i < (n+1)/2; i++)
+        {
+            printNumber(i+1, n-i);
+            System.out.println("");
+        }
+        for (int i = (n-1)/2; i > 0; i--)
+        {
+            printNumber(i, n-i+1);
+            System.out.println("");
+        }
+    }
+    public static void printNumber(int n, int vitri)
+    {
+        for(int i = 0; i < vitri; i++)
+        {
+            System.out.print(" ");
+        }
+        for(int i = n; i > 0; i--)
+        {
+            System.out.print(i);
+        }
+        for(int i = 2; i <= n; i++)
+        {
+            System.out.print(i);
         }
     }
 }
