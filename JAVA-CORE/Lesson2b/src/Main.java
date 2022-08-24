@@ -1,12 +1,12 @@
 public class Main {
     public static void main(String[] args) {
-        bai1();
+        printLetter(2);
     }
 
     public static void bai1()
     {
-        for (int i = 0; i <= 5; i++) {
-            for (int j = 0; j <= i; j++) {
+        for (int i = 1; i <= 5; i++) {
+            for (int j = 1; j <= i; j++) {
                 System.out.print(j);
             }
             System.out.println("");
@@ -88,7 +88,7 @@ public class Main {
         }
     }
 
-    public static void bai6()
+    public static void bai7()
     {
         for (int i = 0; i < 6; i++)
         {
@@ -104,7 +104,7 @@ public class Main {
         }
     }
 
-    public static void bai7()
+    public static void bai8()
     {
         int count = 0;
         for (int i = 0; i < 6; i++)
@@ -115,14 +115,14 @@ public class Main {
             }
             for (int j = 0; j < i+1; j++)
             {
-                System.out.print("*");
+                System.out.print("@");
             }
             count++;
             System.out.println("");
         }
     }
 
-    public static void bai9()
+    public static void bai9a()
     {
         int n = 13;
         for (int i = 0; i < (n+1)/2; i++)
@@ -150,5 +150,20 @@ public class Main {
         {
             System.out.print(i);
         }
+    }
+    public static void printLetter(int n)
+    {
+//        for(int i = 0; i < vitri; i++)
+//        {
+//            System.out.print(" ");
+//        }
+        for(int i = 0; i < n; i++)
+        {
+            System.out.print((char)(65 + i));
+        }
+//        for(int i = 2; i <= n; i++)
+//        {
+//            System.out.print(i);
+//        }
     }
 }
