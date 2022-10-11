@@ -1,0 +1,31 @@
+-- create
+CREATE TABLE Product (
+  id int PRIMARY KEY AUTO_INCREMENT,
+  product_name varchar(255),
+  price float,
+  crete_at date
+);
+
+-- insert
+INSERT INTO Product(product_name, price, crete_at) VALUES ('Toyota Vios',520000000, '2022-10-12');
+INSERT INTO Product(product_name, price, crete_at) VALUES ('Toyota Cross',800000000 , '2022-10-12');
+INSERT INTO Product(product_name, price, crete_at) VALUES ('Hyundai Accent',510000000 , '2022-10-12');
+INSERT INTO Product(product_name, price, crete_at) VALUES ('Honda City',550000000 , '2022-10-12');
+INSERT INTO Product(product_name, price, crete_at) VALUES ('Vinfast Fadil',360000000 , '2022-10-12');
+INSERT INTO Product(product_name, price, crete_at) VALUES ('Mitsubishi Xpander',620000000 , '2022-10-12');
+INSERT INTO Product(product_name, price, crete_at) VALUES ('Mazda CX-5',900000000 , '2022-10-12');
+INSERT INTO Product(product_name, price, crete_at) VALUES ('Kia Seltos',700000000 , '2022-10-12');
+INSERT INTO Product(product_name, price, crete_at) VALUES ('Kia K3',650000000 , '2022-10-12');
+INSERT INTO Product(product_name, price, crete_at) VALUES ('Ford Ranger',1100000000 , '2022-10-12');
+INSERT INTO Product(product_name, price, crete_at) VALUES ('Honda CRV',1100000000 , '2022-10-12');
+INSERT INTO Product(product_name, price, crete_at) VALUES ('Hyundai i10',360000000 , '2022-10-12');
+INSERT INTO Product(product_name, price, crete_at) VALUES ('Hyundai Santafe',1000000000, '2022-10-12');
+INSERT INTO Product(product_name, price, crete_at) VALUES ('Kia Carnival',1800000000, '2022-10-12');
+INSERT INTO Product(product_name, price, crete_at) VALUES ('Hyundai Tucson',800000000, '2022-10-12');
+
+-- fetch 
+-- SELECT * FROM Product WHERE price >= 115000000;
+-- SELECT * FROM Product WHERE product_name LIKE '%h%';
+-- SELECT * FROM Product WHERE product_name LIKE '%kia%' OR price < 200000000;
+-- SELECT * FROM Product WHERE price IN(100000000,130000000,130000000,150000000,160000000,170000000) ;
+SELECT DISTINCT price FROM Product;
